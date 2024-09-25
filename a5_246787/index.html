@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form para Agregar Pokemon</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Informacion del Pokemon</legend>
+            <label for="nombre">Nombre del Pokemon</label>
+            <input type="text">
+            <br>
+            <br>
+            <label for="numero">Numero en la Pokedex</label>
+            <input type="number">
+            <br>
+            <label>Tipo de Pokemon:</label><br>
+            <input type="radio" id="fuego" name="tipo" value="Fuego">
+            <label for="fuego">Fuego</label><br>
+            <input type="radio" id="agua" name="tipo" value="Agua">
+            <label for="agua">Agua</label><br>
+            <input type="radio" id="planta" name="tipo" value="Planta">
+            <label for="planta">Planta</label><br>
+            <input type="radio" id="electrico" name="tipo" value="Electrico">
+            <label for="electrico">Electrico</label>
+            <br>
+            <label for="nivel">Nivel de evolucion</label>
+            <select name="nivelEvolucion" id="">
+                <option value="basico">Basico</option>
+                <option value="primera">Primera Evolucion</option>
+                <option value="segunda">Segunda Evolucion</option>
+            </select>
+            <br>
+            <label for="poder">Nivel del poder</label>
+            <input type="range" name="poder" id="" placeholder="Escribe una breve descripcion" min="1" max="100" value="50">
+            <br>
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder="Agrega una breve descripcion"></textarea><br><br>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Reiniciar</button>
+    </form>
+</body>
+</html>
